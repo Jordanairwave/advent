@@ -9,3 +9,6 @@ A Christmas Advent Calender to be used for promotions
 - Randomise if when the user clicks if it is going to be a prize or just a fun door.
 - Limit the number of prizes
 - Captura peoples data before playing.
+
+## About this repo
+- Codekit is used to compile the SASS and minifiy the JS and CSS output.
