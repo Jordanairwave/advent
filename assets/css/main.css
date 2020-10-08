@@ -1,0 +1,227 @@
+/* ------------------------------------------------------------------------------------------------------
+	CSS Reset - http://meyerweb.com/eric/tools/css/reset/ 
+------------------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ------------------------------------------------------------------------------------------------------
+	Fonts
+------------------------------------------------------------------------------------------------------*/
+@font-face {}/* ------------------------------------------------------------------------------------------------------
+	colours
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Mixins
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Functions
+------------------------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------
+	Font sizes are to be in REM unites
+	Target Size / Base Size = Value
+----------------------------------------------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-size: 16px; }
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.45; }
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 15px; }
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 15px; }
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin-bottom: 15px; }
+
+h4 {
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  margin-bottom: 15px; }
+
+h5 {
+  font-size: 0.75rem;
+  margin-bottom: 15px; }
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px; }
+
+li {
+  font-size: 1rem;
+  margin-bottom: 5px; }
+
+ul, ol {
+  margin-left: 30px; }
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 15px; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-bottom: 15px; }
+
+abbr, acronym {
+  border-bottom-width: 0; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+/* ------------------------------------------------------------------------------------------------------
+	Links styling
+------------------------------------------------------------------------------------------------------*/
+/* General link styling */
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000000; }
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #000000; }
+
+/* ------------------------------------------------------------------------------------------------------
+	General Styles
+------------------------------------------------------------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+article, aside, details, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+img {
+  max-width: 100%; }
+
+/* main content header and section over hidden to stop floats breaking out */
+#main-content header,
+#main-content section {
+  overflow: hidden; }
+
+/* ------------------------------------------------------------------------------------------------------
+	Form styling
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Button styles
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Tables styles
+------------------------------------------------------------------------------------------------------*/
+/* Table Styling */
+table {
+  margin-bottom: 15px; }
+  table tbody tr:nth-child(odd) {
+    background-color: #f6f6f6; }
+  table tbody tr:nth-child(even) {
+    background-color: #ffffff; }
+  table th,
+  table td {
+    padding: 10px; }
+  table th {
+    background-color: #b1b1b1;
+    font-weight: bold; }
+  @media screen and (max-width: 830px) {
+    table {
+      /* Force table to not be like tables anymore */
+      /* Hide table headers (but not display: none;, for accessibility) */
+      /*
+		Label the data - This is needed, you will need to add your own labels for each table.  This section of code will need to be moved the styling for that page or post
+		*/ }
+      table table, table thead, table tbody, table th, table td, table tr {
+        display: block; }
+      table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+      table td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%; }
+      table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap; } }
+
+/* ------------------------------------------------------------------------------------------------------
+	Animations
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	General styling section for main content area on pages and posts
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Header section styling
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Footer styling section
+------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------
+	Home page styling
+------------------------------------------------------------------------------------------------------*/
+/*# sourceMappingURL=main.css.map */
